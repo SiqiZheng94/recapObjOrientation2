@@ -23,7 +23,6 @@ public class ProductRepo {
             Product product = iterator.next();
             if(product.productId().equals(productId)){
                 iterator.remove();
-
             }
         }
 
