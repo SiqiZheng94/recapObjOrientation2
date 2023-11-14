@@ -11,6 +11,7 @@ public class ShopService {
     }
 
     public void placeNewOrder(Order order){
+
         if(orderRepo.findProduct(order.productId())!=null){
             orderRepo.addOrder(order);
             System.out.println("Order placed successfully!");
