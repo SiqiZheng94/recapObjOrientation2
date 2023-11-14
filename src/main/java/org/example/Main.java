@@ -16,10 +16,9 @@ public class Main {
         System.out.println(productRepo.query("33"));
 
         OrderListRepo orderListRepo = new OrderListRepo();
-        ShopService shopService = new ShopService();
-        shopService.placeNewOrder("AAA","11",100);
+        Order order1 = new Order("AA","11",100);
 
-        System.out.println(orderListRepo);
+
 
 
     }

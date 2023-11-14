@@ -19,7 +19,7 @@ public class OrderListRepo {
             }
         }
     }
-    public Order query(String orderId){
+    public Order findByOrder(String orderId){
         for(Order order:orders){
             if(order.orderId().equals(orderId)){
                 return order;
@@ -27,7 +27,14 @@ public class OrderListRepo {
         }
         return null;
     }
-
+    public Order findByProduct(String productId){
+        for(Order order:orders){
+            if(order.productId().equals(productId)){
+                return order;
+            }
+        }
+        return null;
+    }
 
     @Override
     public String toString() {
