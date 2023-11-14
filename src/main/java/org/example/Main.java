@@ -29,6 +29,5 @@ public class Main {
         OrderMapRepo2 orderMapRepo2 = new OrderMapRepo2(productRepo);
         shopService2.placeNewOrder(orderMapRepo2,order1);
         shopService2.placeNewOrder(orderMapRepo2,order2);
-
     }
 }
