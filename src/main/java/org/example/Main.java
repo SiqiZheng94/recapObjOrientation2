@@ -18,6 +18,10 @@ public class Main {
         OrderListRepo orderListRepo = new OrderListRepo();
         Order order1 = new Order("AA","11",100);
 
+        OrderMapRepo orderMapRepo = new OrderMapRepo(productRepo);
+        ShopService shopService = new ShopService(orderMapRepo);
+        shopService.placeNewOrder(order1);
+
 
 
 

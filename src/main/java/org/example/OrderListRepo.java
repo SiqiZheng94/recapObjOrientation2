@@ -27,13 +27,14 @@ public class OrderListRepo {
         }
         return null;
     }
-    public Order findByProduct(String productId){
+    public List<Order> findByProduct(String productId){
+        List<Order> result = new ArrayList<>();
         for(Order order:orders){
             if(order.productId().equals(productId)){
-                return order;
+                result.add(order);
             }
         }
-        return null;
+        return result;
     }
 
     @Override
